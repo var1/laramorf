@@ -1,10 +1,8 @@
 <?php
 
-namespace App;
+namespace Morphy;
 
-use phpmorphy;
-
-class Morphy extends phpmorphy\phpMorphy{
+class Morphy extends phpMorphy{
 	
 	protected static $instance;
 	
@@ -12,7 +10,7 @@ class Morphy extends phpmorphy\phpMorphy{
 		
 		if (!isset(static::$instance[$lang])){
 			// Create descriptor for dictionary located in $dir directory with russian language
-			$dict_bundle = new phpmorphy\phpMorphy_FilesBundle(config('morphy.dict_path',resource_path().'/dicts'), $lang);
+			$dict_bundle = new phpMorphy_FilesBundle(config('morphy.dict_path',resource_path().'/dicts'), $lang);
 			
 			$opts = array(
 						'storage' => PHPMORPHY_STORAGE_FILE,

@@ -5,7 +5,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Morfy\\": "src/"
+            "Morphy\\": "src/"
         },
         "files": [
             "src/common.php"
