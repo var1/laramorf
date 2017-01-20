@@ -8,7 +8,7 @@ http://phpmorphy.sourceforge.net/dokuwiki/download
 and put in <resource directory>/dicts.
 
 Use:
-$m=\Morphy\Morphy::instance();
+$morphy=\Morphy\Morphy::instance();
 $base_form = $morphy->getBaseForm($word_one);
 $form = $morphy->getPartOfSpeech($word_one);
 
