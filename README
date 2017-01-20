@@ -1,0 +1,16 @@
+# laramorf
+Phpmorph for laravel
+Install:
+соmposer require var/morf
+
+Download dict from 
+http://phpmorphy.sourceforge.net/dokuwiki/download
+and put in <resource directory>/dicts.
+
+Use:
+$m=\Morphy\Morphy::instance();
+$base_form = $morphy->getBaseForm($word_one);
+$form = $morphy->getPartOfSpeech($word_one);
+
+Use with other language:
+$m=\Morphy\Morphy::instance('eng');
