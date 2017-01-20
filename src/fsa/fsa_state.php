@@ -1,5 +1,5 @@
 <?php
-namespace phpmorphy;
+namespace Morphy;
 
 class phpMorphy_Link_Base {
 	protected

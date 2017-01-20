@@ -1,5 +1,5 @@
 <?php
-namespace phpmorphy;
+namespace Morphy;
 
 interface phpMorphy_GramInfo_Interace {
     /**
@@ -99,7 +99,7 @@ abstract class phpMorphy_GramInfo implements phpMorphy_GramInfo_Interace {
         
         $storage_type = $storage->getTypeAsString();
         $file_path = dirname(__FILE__) . "/access/graminfo_{$storage_type}.php";
-        $clazz = '\phpmorphy\phpMorphy_GramInfo_' . ucfirst($storage_type);
+        $clazz = '\Morphy\phpMorphy_GramInfo_' . ucfirst($storage_type);
         
         require_once($file_path);
         return new $clazz($storage->getResource(), $header);

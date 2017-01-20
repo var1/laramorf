@@ -1,5 +1,5 @@
 <?php
-namespace phpmorphy;
+namespace Morphy;
 
 interface phpMorphy_Fsa_Interface {
     /**
@@ -109,7 +109,7 @@ abstract class phpMorphy_Fsa implements phpMorphy_Fsa_Interface {
         
         $storage_type = $storage->getTypeAsString();
         $file_path = dirname(__FILE__) . "/access/fsa_{$type}_{$storage_type}.php";
-        $clazz = '\phpmorphy\phpMorphy_Fsa_' . ucfirst($type) . '_' . ucfirst($storage_type);
+        $clazz = '\Morphy\phpMorphy_Fsa_' . ucfirst($type) . '_' . ucfirst($storage_type);
         
         require_once($file_path);
         return new $clazz(

@@ -1,5 +1,5 @@
 <?php
-namespace phpmorphy;
+namespace Morphy;
 
 // parts of speech
 define('PMY_RP_NOUN', 0);

@@ -1,6 +1,6 @@
 <?php
  
-namespace phpmorphy;
+namespace Morphy;
 
 if(!defined('PHPMORPHY_DIR')) {
     define('PHPMORPHY_DIR', dirname(__FILE__));

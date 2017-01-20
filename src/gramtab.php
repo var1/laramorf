@@ -1,5 +1,5 @@
 <?php
-namespace phpmorphy;
+namespace Morphy;
 
 interface phpMorphy_GramTab_Interface {
     function getGrammems($ancodeId);

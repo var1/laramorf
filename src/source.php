@@ -1,5 +1,5 @@
 <?php
-namespace phpmorphy;
+namespace Morphy;
 
 define('PHPMORPHY_SOURCE_FSA', 'fsa');
 define('PHPMORPHY_SOURCE_DBA', 'dba');

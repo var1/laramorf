@@ -4,6 +4,9 @@
     "type": "library",
     "minimum-stability": "stable",
     "autoload": {
+        "psr-4": {
+            "Morfy": "src/"
+        },
         "files": [
             "src/common.php"
         ]

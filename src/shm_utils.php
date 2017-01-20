@@ -1,5 +1,5 @@
 <?php
-namespace phpmorphy;
+namespace Morphy;
 
 if(!defined('PHPMORPHY_SHM_SEGMENT_SIZE')) {
     define('PHPMORPHY_SHM_SEGMENT_SIZE', 1024 * 1024 * 24);

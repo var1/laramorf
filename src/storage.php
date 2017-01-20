@@ -1,5 +1,5 @@
 <?php
-namespace phpmorphy;
+namespace Morphy;
  
 define('PHPMORPHY_STORAGE_FILE',    'file');
 define('PHPMORPHY_STORAGE_MEM',     'mem');
@@ -184,7 +184,7 @@ class phpMorphy_Storage_Factory {
             return new phpMorphy_Storage_Proxy($type, $fileName, $this);
         }
         
-        $clazz = '\phpmorphy\phpMorphy_Storage_' . ucfirst($GLOBALS['__phpmorphy_strtolower']($type));
+        $clazz = '\Morphy\phpMorphy_Storage_' . ucfirst($GLOBALS['__phpmorphy_strtolower']($type));
         
         if($type != PHPMORPHY_STORAGE_SHM) {
             return new $clazz($fileName);

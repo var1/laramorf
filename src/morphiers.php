@@ -1,5 +1,5 @@
 <?php
-namespace phpmorphy;
+namespace Morphy;
 require_once(PHPMORPHY_DIR . '/gramtab.php');
 require_once(PHPMORPHY_DIR . '/unicode.php');
  
@@ -163,7 +163,7 @@ class phpMorphy_AnnotDecoder_Factory {
     }
     
     protected function instantinate($type) {
-        $clazz = '\phpmorphy\phpMorphy_AnnotDecoder_' . ucfirst($GLOBALS['__phpmorphy_strtolower']($type));
+        $clazz = '\Morphy\phpMorphy_AnnotDecoder_' . ucfirst($GLOBALS['__phpmorphy_strtolower']($type));
         
         return new $clazz($this->eos);
     }

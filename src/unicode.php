@@ -1,5 +1,5 @@
 <?php
-namespace phpmorphy;
+namespace Morphy;
 
 abstract class phpMorphy_UnicodeHelper {
     protected static $cache = array();
