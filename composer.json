@@ -1,0 +1,11 @@
+{
+    "name": "var/morf",
+    "description": "PhpMorf for laravel",
+    "type": "library",
+    "minimum-stability": "stable",
+    "autoload": {
+        "files": [
+            "src/common.php"
+        ]
+    }
+}
