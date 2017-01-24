@@ -56,7 +56,7 @@ abstract class phpMorphy_UnicodeHelper {
                 $encoding_name = "$utf_type-$utf_base";
             }
             
-            $clazz = "phpMorphy_UnicodeHelper_" . str_replace('-', '_', $encoding_name);
+            $clazz = "\Morphy\phpMorphy_UnicodeHelper_" . str_replace('-', '_', $encoding_name);
             
             return new $clazz($encoding_name);
         } else {
